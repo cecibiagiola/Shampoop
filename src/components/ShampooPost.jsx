@@ -53,8 +53,9 @@ function ShampooPost({ name, image }) {
       <div className="post-header">{username}</div>
 
       <img
-        src={`/src/assets/images/${image}`}
-        alt={name}
+        //src={`/src/assets/images/${image}`}
+        src={shampoo.image} 
+        alt={shampoo.name}
         className="post-image"
       />
 

@@ -1,4 +1,7 @@
 .post {
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto;
   background-color: #000000;
   border-left: 1px solid #262626;
   border-right: 1px solid #262626;
@@ -14,8 +17,10 @@
 }
 
 .post-image {
-  width: 100%;
+   width: 100%;
+  height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .post-actions {
