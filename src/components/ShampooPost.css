@@ -1,0 +1,47 @@
+.post {
+  background-color: #000000;
+  border-left: 1px solid #262626;
+  border-right: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  margin-bottom: 24px;
+}
+
+.post-header {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.post-image {
+  width: 100%;
+  display: block;
+}
+
+.post-actions {
+  display: flex;
+  gap: 16px;
+  padding: 8px 12px;
+  font-size: 20px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon.liked {
+  color: #ed4956;
+}
+
+.post-likes {
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.post-caption {
+  padding: 8px 12px 12px;
+  font-size: 14px;
+  color: #e5e5e5;
+}
