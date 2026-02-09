@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import "./ShampooPost.css";
+import HeartIcon from "./icons/HeartIcon";
+import CommentIcon from "./icons/CommentIcon";
+import ShareIcon from "./icons/ShareIcon";
+import SaveIcon from "./icons/SaveIcon";
 
 function generateUsername(name) {
   const suffixes = ["oficial", "hair", "arg", "beauty"];
@@ -26,6 +30,10 @@ function ShampooPost({ name, image }) {
     Math.floor(Math.random() * 500) + 20
   );
 
+  const [saved, setSaved] = useState(false);
+
+
+
   useEffect(() => {
     const stored = localStorage.getItem(storageKey);
     if (stored) {
@@ -46,7 +54,11 @@ function ShampooPost({ name, image }) {
       storageKey,
       JSON.stringify({ liked: newLiked, likes: newLikes })
     );
-  }
+  } 
+
+  function toggleSave() {
+  setSaved((prev) => !prev);
+}
 
   return (
     <article className="post">
@@ -58,16 +70,12 @@ function ShampooPost({ name, image }) {
         className="post-image"
       />
 
-      <div className="post-actions">
-        <span
-          className={`icon ${liked ? "liked" : ""}`}
-          onClick={toggleLike}
-        >
-          ❤️
-        </span>
-        <span className="icon">💬</span>
-        <span className="icon">📤</span>
-      </div>
+    <div className="post-actions">
+      <HeartIcon liked={liked} onClick={toggleLike} />
+      <CommentIcon />
+      <ShareIcon />
+      <SaveIcon saved={saved} onClick={toggleSave} />
+    </div>
 
       <div className="post-likes">{likes} Me gusta</div>
 

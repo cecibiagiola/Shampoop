@@ -50,3 +50,33 @@
   font-size: 14px;
   color: #e5e5e5;
 }
+
+/*aca empieza el nuevo codigo*/
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  cursor: pointer;
+}
+
+.heart {
+  fill: none;
+  stroke: #ffffff;
+}
+
+.heart.liked {
+  fill: #ed4956;
+  stroke: #ed4956;
+}
+
+.save {
+  fill: none;
+  stroke: #ffffff;
+  transform: translatex(260px);  
+}
+
+.save.saved {
+  fill: #ffffff;
+}
