@@ -44,6 +44,21 @@ const shampoos = [
     name: "Dove Shampoo",
     image: "/images/Dove-shampoo.jpeg",
   },
+  {
+    id: 10,
+    name: "Head-and-shoulders",
+    image: "/images/Head-and-shoulders.png",
+  },
+  {
+    id: 11,
+    name: "Plusbelle Shampoo",
+    image: "/images/Plusbelle.png",
+  },
+  {
+    id: 12,
+    name: "Elvive-oleo",
+    image: "/images/Elvive-oleo.png",
+  },
 
 ];
 
